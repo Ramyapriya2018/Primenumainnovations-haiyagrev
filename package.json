@@ -1,0 +1,23 @@
+{
+  "name": "primenumainnovations-haiyagrev",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Ramyapriya2018/Primenumainnovations-haiyagrev#readme",
+  "bugs": {
+    "url": "https://github.com/Ramyapriya2018/Primenumainnovations-haiyagrev/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramyapriya2018/Primenumainnovations-haiyagrev.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  }
+}

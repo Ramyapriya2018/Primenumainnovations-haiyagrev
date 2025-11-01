@@ -1,0 +1,192 @@
+//Contact <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0e3a67" />
+    <title>Contact Us – HAIYAGREV Publications</title>
+    <meta
+      name="description"
+      content="Get in touch with HAIYAGREV Publications for research and writing support."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="../index.html#top" class="brand" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true">∎</span>
+          <span class="brand-text">Haiyagrev</span>
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="siteNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="siteNav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./how-we-work.html">How we work</a></li>
+            <li><a href="./services.html">Our Services</a></li>
+            <li><a href="./publication.html">Publication</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a class="active" href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Contact Us</h1>
+            <p>
+              It was always an exceptional commitment to provide valuable
+              professional services to scholars. Our team includes elite
+              developers and technical writers with extensive knowledge in
+              various fields of research.
+            </p>
+            <ul class="list">
+              <li>Thesis Writing</li>
+              <li>Dissertation Writing Service</li>
+              <li>Research paper writing</li>
+              <li>Paper Writing</li>
+              <li>Essay Writing</li>
+            </ul>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact">
+          <h2>HAIYAGREV Publications</h2>
+          <div class="contact-grid">
+            <div class="card" aria-label="Address">
+              <div class="card-title">Address</div>
+              <div class="card-text">
+                214-A28 Sivachitra Apartments, Second Street, Kamaraj Nagar,<br />Bhavani,
+                Erode - 638301.<br />Tamilnadu. India.
+              </div>
+            </div>
+            <a class="card" href="tel:+916385347107" aria-label="Mobile">
+              <div class="card-title">Mobile</div>
+              <div class="card-text">(+91) 6385 347 107</div>
+            </a>
+            <a class="card" href="tel:+914256796291" aria-label="Landline">
+              <div class="card-title">Landline</div>
+              <div class="card-text">04256-796291</div>
+            </a>
+            <a class="card" href="mailto:info@haiyagrev.com" aria-label="Email">
+              <div class="card-title">Email</div>
+              <div class="card-text">info@haiyagrev.com</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <h2>Leave a message</h2>
+          <form
+            class="card"
+            action="#"
+            method="post"
+            onsubmit="event.preventDefault(); alert('Thank you! We will get back to you shortly.');"
+          >
+            <div
+              style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr"
+            >
+              <div>
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  style="
+                    width: 100%;
+                    margin-top: 6px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid rgba(255, 255, 255, 0.18);
+                    background: rgba(255, 255, 255, 0.06);
+                    color: var(--text);
+                  "
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  style="
+                    width: 100%;
+                    margin-top: 6px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid rgba(255, 255, 255, 0.18);
+                    background: rgba(255, 255, 255, 0.06);
+                    color: var(--text);
+                  "
+                />
+              </div>
+            </div>
+            <div style="margin-top: 10px">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                style="
+                  width: 100%;
+                  margin-top: 6px;
+                  padding: 10px;
+                  border-radius: 8px;
+                  border: 1px solid rgba(255, 255, 255, 0.18);
+                  background: rgba(255, 255, 255, 0.06);
+                  color: var(--text);
+                "
+              ></textarea>
+            </div>
+            <div class="hero-cta" style="margin-top: 12px">
+              <button class="btn btn-primary" type="submit">
+                Send a message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2021 HAIYAGREV Publications. All Rights Reserved.</p>
+        <a href="#top" class="to-top" aria-label="Back to top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="../index.js"></script>
+  </body>
+</html>
