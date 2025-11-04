@@ -12,12 +12,12 @@
       name="description"
       content="A global platform to support researchers, academics, and professionals with innovation-driven guidance and knowledge creation."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
     <link rel="stylesheet" href="./index.css" />
     <!-- Semantic UI CSS -->
 <link rel="stylesheet"
@@ -30,27 +30,46 @@
 
   </head>
   <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <a href="#top" class="brand" aria-label="Home">
-         
-          <span class="brand-text">Haiyagrev</span>
-        </a>
-     
-        <nav class="site-nav" id="siteNav">
-          <ul>
-            <li><a class="active" href="./index.html">Home</a></li>
-            <li><a href="pages/about.html"  class="nav-link">About us</a></li>
-            <li><a href="pages/how-we-work.html"  class="nav-link">How we work</a></li>
-            <li><a href="pages/services.html"  class="nav-link">Our Services</a></li>
-            <li><a href="pages/publication.html"  class="nav-link">Publication</a></li>
-            <li><a href="pages/blog.html"  class="nav-link">Blog</a></li>
-            <li><a href="pages/contact.html"  class="nav-link">Contact Us</a></li>
+ <header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand" aria-label="Home">
+      <span class="brand-text">Haiyagrev</span>
+    </a>
+
+    <nav class="site-nav" id="siteNav">
+      <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="pages/about.html" class="nav-link">About us</a></li>
+        <li><a href="pages/how-we-work.html" class="nav-link">How we work</a></li>
+
+        <!-- Services Dropdown -->
+        <li class="services-dropdown">
+          <a href="pages/services.html" class="nav-link">Our Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="../src/pages/services.html#research-proposal">Research Proposal</a></li>
+            <li><a href="../src/pages/services.html#research-consultation">Research Consultation</a></li>
+            <li><a href="../src/pages/services.html#research-assistance">Research Assistance</a></li>
+            <li><a href="../src/pages/services.html#phd-proposal">Ph.D. Proposal</a></li>
+            <li><a href="../src/pages/services.html#research-paper-writing">Research Paper Writing</a></li>
+            <li><a href="../src/pages/services.html#research-presentation">Research Presentation</a></li>
+            <li><a href="../src/pages/services.html#patent">Patent</a></li>
+            <li><a href="../src/pages/services.html#trademark">Trademark</a></li>
+            <li><a href="../src/pages/services.html#content-writing">Content Writing</a></li>
+            <li><a href="../src/pages/services.html#addon-services">Addon Services</a></li>
+            <li><a href="../src/pages/services.html#writing-services">Writing Services</a></li>
           </ul>
-        </nav>
-        <button class="submit-btn ">Submit Now</button>
-      </div>
-    </header>
+        </li>
+
+        <!-- Remaining main links -->
+        <li><a href="pages/publication.html" class="nav-link">Publication</a></li>
+        <li><a href="pages/blog.html" class="nav-link">Blog</a></li>
+        <li><a href="pages/contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <button class="submit-btn">Submit Now</button>
+  </div>
+</header>
 
     <main id="top">
       <section class="hero">
@@ -111,7 +130,7 @@
               class="service-card"
             >
               <img
-                src="./assets/homepageimages/Research-Assistance-768x300.jpg"
+                src="./assets/homepageimages/Research-Assistance.png"
                 alt="Research Assistance"
               />
               <h3>Research Assistance</h3>
@@ -156,7 +175,10 @@
             </a>
 
             <a href="./pages/services.html#trademark" class="service-card">
-              <img src="./assets/homepageimages/a2.jpg" alt="Trademark" />
+              <img
+                src="./assets/homepageimages/trademark.png"
+                alt="Trademark"
+              />
               <h3>Trademark</h3>
             </a>
 
@@ -173,7 +195,7 @@
 
             <a href="./pages/services.html#addon-services" class="service-card">
               <img
-                src="./assets/homepageimages/a3-141x75.jpg"
+                src="./assets/homepageimages/addon-services.png"
                 alt="Addon Services"
               />
               <h3>Addon Services</h3>
@@ -184,7 +206,7 @@
               class="service-card"
             >
               <img
-                src="./assets/homepageimages/Content-Writing-768x300.jpg"
+                src="./assets/homepageimages/writing-services.png"
                 alt="Writing Services"
               />
               <h3>Writing Services</h3>

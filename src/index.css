@@ -22,8 +22,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial,
-    "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: Poppins, Helvetica, Arial, sans-serif;
   color: var(--black);
 
   line-height: 1.6;
@@ -71,7 +70,7 @@ body {
   letter-spacing: 0.4px;
 }
 
-.site-nav ul {
+.site-nav > ul {
   display: flex;
   align-items: center;
   gap: 18px;
@@ -79,13 +78,60 @@ body {
   margin: 0;
   padding: 0;
 }
-.site-nav a {
-  color: var(--text);
+
+.site-nav > ul > li > a {
+  color: var(--muted);
   text-decoration: none;
   font-weight: 600;
   padding: 8px 10px;
   border-radius: 8px;
   position: relative;
+}
+
+/* Dropdown styles */
+.services-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(39, 39, 40, 0.95);
+  backdrop-filter: saturate(160%) blur(10px);
+  min-width: 250px;
+  border-radius: 8px;
+  padding: 8px 0;
+  box-shadow: var(--shadow);
+  z-index: 100;
+  margin-top: 8px !important;
+}
+
+.dropdown-menu li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 16px;
+  color: var(--muted);
+  border-radius: 0;
+  font-size: 0.95em;
+  transition: all 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  /* text-decoration: none; */
+}
+
+.services-dropdown:hover .dropdown-menu {
+  display: block;
+  text-decoration: none;
 }
 .site-nav a:hover,
 .site-nav a:focus {
@@ -230,6 +276,7 @@ body {
 .section h2 {
   font-size: clamp(20px, 3vw, 38px);
   margin: 0 0 16px;
+  color: var(--black);
 }
 .section p {
   margin: 0 0 14px;
@@ -252,9 +299,8 @@ body {
 .list li {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 5px 14px;
+  padding: 10px 10px;
   border-radius: 12px;
-  color: var(--black);
 }
 
 /* Contact */
@@ -266,9 +312,11 @@ body {
   color: var(--highlight);
 }
 .contact-grid {
+  color: var(--black);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  margin-top: 12px;
   margin-top: 12px;
 }
 .card {
@@ -566,4 +614,16 @@ body {
   color: white;
   padding-top: 40px;
   padding-bottom: 10px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
