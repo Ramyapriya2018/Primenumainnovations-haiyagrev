@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,6 +19,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
+    <!-- Semantic UI CSS -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.2/semantic.min.css"
+      integrity="sha512-9AyNfIUGZB2PiHUNoIcOShhOJt1VnqE2x0RWFv/rq9YGZwJXJ0vHfed8RkWNymM5p1qjAOV6BM/7rYxkBjp4MQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+/>
+
+
   </head>
   <body>
     <header class="site-header">
@@ -55,11 +67,7 @@
               <a class="btn btn-outline" href="#phd-guidance">PhD Guidance</a>
             </div>
           </div>
-          <div class="hero-art" aria-hidden="true">
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-            <div class="orb orb-3"></div>
-          </div>
+       
         </div>
       </section>
       <section id="our-services" style="padding: 60px 0; background: #f9f9f9">
@@ -188,8 +196,8 @@
       <section id="vision" class="section">
         <div class="container">
           <h2>Our Vision</h2>
-          <ul class="list">
-            <ul class="custom-bullets">
+         
+            <ul class="custom-bullets list">
               <li>
                 Provide a global platform for researchers and academics actively
                 engaged in research and professionals who wish to share in
@@ -210,14 +218,14 @@
                 generation people in this society.
               </li>
             </ul>
-          </ul>
+       
         </div>
       </section>
 
-      <section id="mission" class="section alt">
+      <section id="mission" class="section">
         <div class="container">
           <h2>Our Mission</h2>
-          <ul class="list">
+              <ul class="custom-bullets list">
             <li>
               This would support academia, industries and society as a whole, to
               pursue active research worldwide. Establish an industry and
@@ -241,20 +249,23 @@
       <section id="philosophy" class="section">
         <div class="container">
           <h2>Corporate Philosophy</h2>
-          <p>
+           <ul class="custom-bullets list">
+            <li>
             The visionary founder, who trust in punctuality, customer
             orientation and delivery on time, envisages the company's company
             philosophy. In terms of thinking beliefs and business activities
             that created inspired success in the corporate world, this
             philosophy was successfully inculcated as a company culture.
-          </p>
+            </li>
+
+            </ul>
         </div>
       </section>
 
       <section id="phd-guidance" class="section alt">
         <div class="container">
           <h2>Complete PhD Guidance</h2>
-          <ul class="list">
+            <ul class="custom-bullets list">
             <li>
               Connected with clients we are increasingly providing beneficial,
               more client engaged and progressively steadfast.
@@ -274,21 +285,22 @@
               that research.
             </li>
           </ul>
-          <p>
+          <p class="phd-guide-para">
             The division a dream company of our visionary founder was
             established with a sole motive to increase intellectual
             contributions through research in various diversified fields to the
-            society. This social perspective and need gap – Professionals
+            society. </p>
+            <p>This social perspective and need gap – Professionals
             academicians looking for research guidance and support lead to the
             start of the company before a decade.
           </p>
         </div>
-      </section>
+     
 
-      <section id="customized" class="section">
-        <div class="container">
+  
+        <div class="container cus-sol">
           <h2>Customized Solutions</h2>
-          <p class="eyebrow">Customized Solutions</p>
+     
           <p>
             Our PhD Guidance give tweaked arrangement (Customized Solutions)
             dependent on the client’s requisites. As well as, custom answers for
@@ -297,74 +309,133 @@
         </div>
       </section>
 
-      <section id="testimonials" class="section alt">
-        <div class="container">
-          <h2>Our Clients Says</h2>
-          <p class="eyebrow">Testimonials</p>
-          <div class="testimonials">
-            <div class="t-card">
-              <div class="t-quote">“ ”</div>
-              <div class="t-meta">— Client</div>
-            </div>
-            <div class="t-card">
-              <div class="t-quote">“ ”</div>
-              <div class="t-meta">— Client</div>
-            </div>
-            <div class="t-card">
-              <div class="t-quote">“ ”</div>
-              <div class="t-meta">— Client</div>
-            </div>
-          </div>
-          <div class="t-dots" aria-hidden="true">
-            <span>o</span>
-            <span>o</span>
-            <span>o</span>
-          </div>
-        </div>
-      </section>
+    <section id="testimonials" class="section">
+  <div class=" our-client">
+    <p class="sub-title">OUR CLIENTS SAYS</p>
+    <h2>Testimonials</h2>
 
-      <section id="contact" class="section">
+    <div class="testimonial-slider">
+      <!-- Slide 1 -->
+      <div class="slide active">
+   
+        <p class="t-quote">
+      Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dul, non fells.Maecenas malesuada elit lectus fells, malesuada ultricies. Curabitur er ligula.
+        </p>
+         <div class="t-small-dots">
+      <span class="dot active"></span>
+      <span class="dot active"></span>
+      <span class="dot active"></span>
+    </div>
+        <h3 class="t-meta">Joan Avina</h3>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+   
+        <p class="t-quote">
+          Aliquam erat ac ipsum. Integer aliquam purus Quisque lorem fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus arci luctus non.
+        </p>
+         <div class="t-small-dots">
+      <span class="dot active"></span>
+      <span class="dot active"></span>
+      <span class="dot active"></span>
+    </div>
+        <h3 class="t-meta">Michael Green</h3>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+       
+        <p class="t-quote">
+             Vestibulum commodo volutpat a, convallis ac, laoreet enim.
+          Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperadiet sit amet magna. Vestibulum dapibus 
+        </p>
+     <div class="t-small-dots">
+      <span class="dot active"></span>
+      <span class="dot active"></span>
+      <span class="dot active"></span>
+    </div>
+        <h3 class="t-meta">Sophia Lee</h3>
+      </div>
+    </div>
+
+    <div class="t-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+
+  <footer class="site-footer">
+      <section id="contact" class="contact-section">
         <div class="container contact">
-          <h2>Contact</h2>
-          <p class="lead">
+           <p class="lead">
             Looking for expert solutions for your research interests?
-            <strong>Contact Us</strong>
+            <strong class="strong">Contact Us</strong>
           </p>
-          <p>
-            Do you have any questions? <strong>Feel free to contact us.</strong>
-          </p>
+         
+          <h2>
+            Do you have any questions? </br><strong>Feel free to contact us.</strong>
+          </h2>
           <div class="contact-grid">
-            <a class="card" href="tel:+916385347107" aria-label="Mobile">
-              <div class="card-title">Mobile</div>
-              <div class="card-text">(+91) 6385 347 107</div>
+            <a  href="tel:+916385347107" aria-label="Mobile">
+              
+              <div class="card-text"><i class="phone icon"></i> (+91) 6385 347 107</div>
             </a>
-            <a class="card" href="tel:+914256796291" aria-label="Landline">
-              <div class="card-title">Landline</div>
-              <div class="card-text">04256-796291</div>
+            <a  href="tel:+914256796291" aria-label="Landline">
+             
+              <div class="card-text"><i class="phone icon"></i> 04256-796291</div>
             </a>
-            <a class="card" href="mailto:info@haiyagrev.com" aria-label="Email">
-              <div class="card-title">Email</div>
-              <div class="card-text">info@haiyagrev.com</div>
+            <a  href="mailto:info@haiyagrev.com" aria-label="Email">
+             
+              <div class="card-text"><i class="mail"> info@haiyagrev.com</div>
             </a>
-            <div class="card" aria-label="Location">
-              <div class="card-title">Address</div>
+            </div>
+            <div aria-label="Location">
+              
               <div class="card-text">
                 214-A28 Sivachitra Apartments, Kamaraj Nagar, Bhavani, Erode -
                 638301. Tamilnadu. India.
               </div>
-            </div>
+            
           </div>
         </div>
       </section>
-    </main>
+   
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 2021 HAIYAGREV Publications. All Rights Reserved.</p>
-        <a href="#top" class="to-top" aria-label="Back to top">Back to top ↑</a>
+  
+      <div class="footer-inner">
+        <p>© 2021 <strong>HAIYAGREV Publications. </strong>All Rights Reserved.</p>
+  
       </div>
     </footer>
-
+ </main>
     <script src="./index.js"></script>
+    <!-- Semantic UI JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.2/semantic.min.js"></script>
+
   </body>
 </html>
+<script>
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".t-dots .dot");
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      showSlide(index);
+    });
+  });
+</script>
+
+
