@@ -10,6 +10,7 @@
   --accent: #7c3aed;
   --highlight: #f4d03f;
   --shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  --black: #000000;
 }
 
 * {
@@ -22,16 +23,8 @@ body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial,
     "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-  color: var(--text);
-  background: radial-gradient(
-        1200px 800px at 80% -200px,
-        #184a7a 0%,
-        transparent 60%
-      )
-      no-repeat,
-    radial-gradient(800px 600px at -100px 50%, #102844 0%, transparent 60%)
-      no-repeat,
-    var(--bg);
+  color: var(--black);
+
   line-height: 1.6;
 }
 
@@ -45,7 +38,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(11, 37, 64, 0.8);
+  background: rgba(39, 39, 40, 0.8);
   backdrop-filter: saturate(160%) blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -53,7 +46,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 0;
+
+  margin: 0px 40px;
 }
 .brand {
   display: inline-flex;
@@ -441,4 +435,23 @@ body {
   color: #333;
   margin: 0;
   font-weight: 500;
+}
+.submit-btn {
+  padding: 10px 30px;
+  border: none;
+  background: blue;
+  color: white;
+  font-weight: 600;
+}
+
+.site-nav {
+  background: #4e4d4f;
+  padding: 20px;
+  position: relative;
+  top: 40px;
+  left: 180px;
+  /* background: rgb(52 49 49 / 12%); */
+  background: rgb(74 76 76 / 77%);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
