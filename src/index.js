@@ -1,4 +1,3 @@
-//script . js file
 const navToggleButton = document.getElementById("navToggle");
 const siteNav = document.getElementById("siteNav");
 
@@ -14,3 +13,15 @@ const yearEl = document.getElementById("year");
 if (yearEl) {
   yearEl.textContent = String(new Date().getFullYear());
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const toTopBtn = document.querySelector(".to-top");
+  if (toTopBtn) {
+    toTopBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  }
+});
