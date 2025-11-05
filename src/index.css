@@ -781,6 +781,6 @@ iframe {
   color: #fff;
   padding: 30px;
 }
-.section > company-title {
+.section > .company-title {
   color: #fff !important;
 }
