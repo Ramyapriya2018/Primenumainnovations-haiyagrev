@@ -19,3 +19,8 @@ Thumbs.db
 
 # Environment variables
 .env
+# Parcel build cache
+.parcel-cache/
+
+
+
