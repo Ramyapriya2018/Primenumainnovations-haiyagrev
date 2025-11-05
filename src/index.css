@@ -24,7 +24,7 @@ body {
   margin: 0;
   font-family: Poppins, Helvetica, Arial, sans-serif;
   color: var(--black);
-
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -46,7 +46,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   margin: 0px 40px;
 }
 .brand {
@@ -184,7 +183,6 @@ body {
   position: relative;
 }
 .hero-inner {
-  display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 32px;
   align-items: center;
@@ -221,6 +219,7 @@ body {
   border-radius: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
+  border: none;
 }
 .btn-primary:hover {
   background: var(--highlight);
@@ -270,7 +269,7 @@ body {
 .section {
   padding: 30px 0px;
 }
-.section.alt {
+#phd-guidance {
   background: #fcfc02d4;
 }
 .section h2 {
@@ -292,9 +291,8 @@ body {
 
 .list {
   display: grid;
-  gap: 10px;
+
   padding-left: 0;
-  list-style: none;
 }
 .list li {
   background: rgba(255, 255, 255, 0.04);
@@ -359,14 +357,12 @@ body {
   background: #360202;
 }
 .footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 20px 0;
   border-top: 1px solid #8f8888ba;
 }
 .footer-inner p {
   color: var(--white);
+  text-align: center;
 }
 .footer-inner strong {
   color: var(--highlight);
@@ -626,4 +622,123 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+}
+.contact-info {
+  flex: 1 1 40%;
+}
+.contact-info h2 {
+  font-size: 38px;
+}
+.map-container {
+  width: 500px;
+
+  position: relative;
+  bottom: 70px;
+}
+iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+.social a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #333;
+}
+.contacts-section {
+  display: flex;
+}
+#name {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+
+  color: var(--text);
+}
+#email {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+
+  color: var(--text);
+}
+#message {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+
+  color: var(--text);
+}
+.form-field {
+  color: var(--black);
+  font-size: 20px;
+}
+.back-to-top {
+  position: relative;
+  bottom: 60px;
+  right: 20px;
+  float: right;
+}
+.to-top {
+  width: 50px;
+  height: 50px;
+  border: 1px solide var(--highlight);
+  border-radius: 8px;
+  background-color: var(--highlight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-to-top i.icon {
+  font-size: 50px;
+  color: var(--white);
+  position: relative;
+  bottom: 15px;
+}
+.contact-info i.icon {
+  color: rgb(0, 130, 230);
+}
+.social i.facebook.f.icon {
+  background: darkblue;
+  color: white;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+}
+.social i.twitter.icon {
+  background: rgb(0, 130, 230);
+  color: white;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.social i.linkedin.icon {
+  background: rgb(0, 130, 230);
+  color: white;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+}
+.social-icons {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social {
+  margin: 10px 0px;
 }
