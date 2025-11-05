@@ -15,7 +15,21 @@ if (yearEl) {
 }
 document.addEventListener("DOMContentLoaded", () => {
   const toTopBtn = document.querySelector(".to-top");
+
   if (toTopBtn) {
+    // Hide button initially
+    toTopBtn.style.display = "none";
+
+    // Show/hide the button based on scroll position
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        toTopBtn.style.display = "block"; // show button
+      } else {
+        toTopBtn.style.display = "none"; // hide button
+      }
+    });
+
+    // Smooth scroll to top when clicked
     toTopBtn.addEventListener("click", (e) => {
       e.preventDefault();
       window.scrollTo({
