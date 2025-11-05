@@ -22,12 +22,12 @@
 
   </head>
   <body>
-    <header class="site-header" id="top">
-      <div class="container header-inner">
-        <a href="../index.html#top" class="brand" aria-label="Home">
-          <img src="../assets/HAIYAGREV_PUBLICATIONS_LOGO-260x69.png" alt="Haiyagrev Logo" class="brand-logo" />
-        </a>
-        <button
+    <header class="site-header">
+  <div class="header-inner">
+     <a href="../index.html" class="brand" aria-label="Home">
+  <img src="../assets/HAIYAGREV_PUBLICATIONS_LOGO-260x69.png" alt="Haiyagrev Logo" class="brand-logo" />
+</a>
+  <button
           class="nav-toggle"
           id="navToggle"
           aria-expanded="false"
@@ -38,19 +38,41 @@
           <span class="nav-toggle-bar" aria-hidden="true"></span>
           <span class="nav-toggle-bar" aria-hidden="true"></span>
         </button>
-        <nav class="site-nav" id="siteNav">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About us</a></li>
-            <li><a href="./how-we-work.html">How we work</a></li>
-            <li><a href="./services.html">Our Services</a></li>
-            <li><a href="./publication.html">Publication</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a class="active" href="./contact.html">Contact Us</a></li>
+
+    <nav class="site-nav" id="siteNav">
+      <ul>
+        <li><a  href="../index.html">Home</a></li>
+        <li><a href="about.html" class="nav-link">About us</a></li>
+        <li><a href="how-we-work.html" class="nav-link">How we work</a></li>
+
+        <!-- Services Dropdown -->
+        <li class="services-dropdown">
+          <a href="services.html" class="nav-link">Our Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#research-proposal">Research Proposal</a></li>
+            <li><a href="services.html#research-consultation">Research Consultation</a></li>
+            <li><a href="services.html#research-assistance">Research Assistance</a></li>
+            <li><a href="services.html#phd-proposal">Ph.D. Proposal</a></li>
+            <li><a href="services.html#research-paper-writing">Research Paper Writing</a></li>
+            <li><a href="services.html#research-presentation">Research Presentation</a></li>
+            <li><a href="services.html#patent">Patent</a></li>
+            <li><a href="services.html#trademark">Trademark</a></li>
+            <li><a href="services.html#content-writing">Content Writing</a></li>
+            <li><a href="services.html#addon-services">Addon Services</a></li>
+            <li><a href="services.html#writing-services">Writing Services</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </li>
+
+        <!-- Remaining main links -->
+        <li><a href="publication.html" class="nav-link">Publication</a></li>
+        <li><a  href="blog.html" class="nav-link">Blog</a></li>
+        <li><a class="active" href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <button class="submit-btn">Submit Now</button>
+  </div>
+</header>
 
     <main>
       <section class="hero"> <h1 class="sub-heading">Contact Us</h1>
