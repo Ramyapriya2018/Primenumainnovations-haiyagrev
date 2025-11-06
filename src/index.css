@@ -114,12 +114,18 @@ li {
   box-shadow: var(--shadow);
   z-index: 100;
   margin-top: 8px !important;
+  text-align: center;
 }
 
 .dropdown-menu li {
   display: block;
+  margin: 0 auto;
   margin: 0;
   padding: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dropdown-menu li:last-child {
+  border-bottom: none;
 }
 
 .dropdown-menu a {
