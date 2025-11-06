@@ -2,7 +2,7 @@
   "name": "primenumainnovations-haiyagrev",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/Ramyapriya2018/Primenumainnovations-haiyagrev#readme",
+  "homepage": "https://github.com/Ramyapriya2018/Primenumainnovations-haiyagrev",
   "bugs": {
     "url": "https://github.com/Ramyapriya2018/Primenumainnovations-haiyagrev/issues"
   },
@@ -15,7 +15,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url /Primenumainnovations-haiyagrev/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
