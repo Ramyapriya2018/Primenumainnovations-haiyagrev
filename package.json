@@ -1,4 +1,5 @@
 {
+  "_comment": "Deployment tips: npm run build → builds site npm run deploy → publishes to GitHub Pages ",
   "name": "primenumainnovations-haiyagrev",
   "version": "1.0.0",
   "description": "",

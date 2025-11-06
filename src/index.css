@@ -461,6 +461,9 @@ li {
   padding: 10px 30px;
   font-weight: 600;
 }
+.submit-btn:hover {
+  color: var(--highlight);
+}
 
 .site-nav {
   padding: 0px 20px;
@@ -752,7 +755,7 @@ iframe {
   width: auto;
 }
 .company-container {
-  background-color: #0b0808;
+  background-color: #353232;
   color: #fff;
   padding: 30px 45px;
 }
@@ -784,6 +787,10 @@ iframe {
   gap: 10px;
   grid-template-columns: 1fr 1fr;
 }
+:target {
+  scroll-margin-top: 60px;
+}
+
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
   main {
@@ -820,8 +827,8 @@ iframe {
     height: 70px;
   }
 
-  .image-container img {
-    display: none;
+  :target {
+    scroll-margin-top: 80px;
   }
   .our-client h2 {
     font-size: 24px;
@@ -860,6 +867,9 @@ iframe {
   .services-dropdown .dropdown-menu {
     display: none;
     padding-left: 15px;
+  }
+  .site-nav .services-dropdown .dropdown-menu {
+    display: none;
   }
 
   .container {

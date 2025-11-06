@@ -8,28 +8,20 @@ if (navToggleButton && siteNav) {
   });
 }
 
-// Current year in footer
-const yearEl = document.getElementById("year");
-if (yearEl) {
-  yearEl.textContent = String(new Date().getFullYear());
-}
 document.addEventListener("DOMContentLoaded", () => {
   const toTopBtn = document.querySelector(".to-top");
 
   if (toTopBtn) {
-    // Hide button initially
     toTopBtn.style.display = "none";
 
-    // Show/hide the button based on scroll position
     window.addEventListener("scroll", () => {
       if (window.scrollY > 200) {
-        toTopBtn.style.display = "block"; // show button
+        toTopBtn.style.display = "block";
       } else {
-        toTopBtn.style.display = "none"; // hide button
+        toTopBtn.style.display = "none";
       }
     });
 
-    // Smooth scroll to top when clicked
     toTopBtn.addEventListener("click", (e) => {
       e.preventDefault();
       window.scrollTo({
@@ -45,6 +37,7 @@ const nav = document.getElementById("siteNav");
 
 toggleBtn.addEventListener("click", () => {
   nav.classList.toggle("active");
+  toggleBtn.classList.toggle("open");
 
   const expanded = toggleBtn.getAttribute("aria-expanded") === "true" || false;
   toggleBtn.setAttribute("aria-expanded", !expanded);
