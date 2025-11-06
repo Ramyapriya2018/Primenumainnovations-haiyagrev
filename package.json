@@ -15,7 +15,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url /Primenumainnovations-haiyagrev/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
