@@ -39,3 +39,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+const toggleBtn = document.getElementById("navToggle");
+const nav = document.getElementById("siteNav");
+
+toggleBtn.addEventListener("click", () => {
+  nav.classList.toggle("active");
+
+  const expanded = toggleBtn.getAttribute("aria-expanded") === "true" || false;
+  toggleBtn.setAttribute("aria-expanded", !expanded);
+});
+
+const serviceDropdown = document.querySelector(".services-dropdown");
+serviceDropdown.addEventListener("click", () => {
+  serviceDropdown.classList.toggle("open");
+});
