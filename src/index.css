@@ -287,7 +287,8 @@ li {
   padding: 20px 0px;
 }
 #phd-guidance {
-  background: #fcfc02d4;
+  /* background: #fcfc02d4; */
+  background: #ededd8d4;
 }
 #phd-guidance p {
   color: var(--black);
