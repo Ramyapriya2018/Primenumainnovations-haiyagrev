@@ -824,7 +824,7 @@ iframe {
   scroll-margin-top: 60px;
 }
 
-@media (width <= 768px) {
+@media (width <= 1024px) {
   main {
     overflow: hidden;
   }
